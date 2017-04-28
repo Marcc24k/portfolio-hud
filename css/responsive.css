@@ -1,0 +1,380 @@
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 320px) {
+    section {
+        position: relative;
+        left: -110px;
+        width: 803px;
+        min-height: auto;
+        /*        border: 4px solid green;*/
+    }
+    #hud {
+        position: absolute;
+        width: 700px;
+        top: 50px;
+        height: 500px;
+        background-size: 800px;
+    }
+    .container {
+        position: absolute;
+        height: 130px;
+        width: 110px !important;
+        /*        border: 2px solid red !important;*/
+        top: 210px !important;
+        left: 345px !important;
+        z-index: 100;
+        /*    border:2px solid green;*/
+    }
+    /* THIS IS ACTUALLY THE MEDIUM CIRCLE*/
+    #large-circle {
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        border: 10px solid transparent;
+        border-radius: 100%;
+        border-top-color: goldenrod;
+        border-bottom-color: goldenrod;
+        top: 10px;
+        left: 0px;
+        opacity: .3;
+        filter: blur(1px);
+    }
+    #x-large-circle {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border: 10px solid transparent;
+        border-left-color: orangered;
+        border-right-color: orangered;
+        border-radius: 100%;
+        top: 20px;
+        left: 10px;
+        background: transparent;
+        opacity: .65;
+        filter: blur(1px);
+        float: left;
+    }
+    #small-circle {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border: 10px solid transparent;
+        border-radius: 100%;
+        border-top-color: forestgreen;
+        border-bottom-color: forestgreen;
+        top: 29.5px;
+        left: 20px;
+        opacity: .6;
+        filter: blur(1px);
+        z-index: 100;
+        background-color: transparent;
+    }
+    #blue-line {
+        position: relative;
+        width: 469px;
+        height: 250px;
+        color: white;
+        background-image: url(../imgs/colorHud/pink-line.png);
+        background-size: 70%;
+        background-repeat: no-repeat;
+        left: 72px;
+        top: 103px;
+        z-index: 200;
+    }
+    #orange-line {
+        position: relative;
+        width: 485px;
+        height: 220px;
+        background-image: url(../imgs/colorHud/orange-line.png);
+        background-size: 70%;
+        background-repeat: no-repeat;
+        top: 46px;
+        left: 414px;
+        z-index: 200;
+    }
+    #green-line {
+        position: absolute;
+        width: 492px;
+        height: 223px;
+        background-image: url(../imgs/colorHud/green-line.png);
+        background-size: 70%;
+        background-repeat: no-repeat;
+        top: 111px;
+        left: 417px;
+        z-index: 200;
+    }
+    #decker_stats {
+        position: absolute;
+        /* border: 2px solid red; */
+        height: 40px;
+        padding: 10px;
+        color: #166f2e;
+        font-family: 'Wallpoet', cursive;
+        font-size: 18px;
+        left: 10px;
+        top: -14px;
+        z-index: 200;
+    }
+    #decker_folio {
+        position: absolute;
+        /* border: 2px solid red; */
+        height: 40px;
+        padding: 10px;
+        color: #b100ff;
+        font-family: 'Wallpoet', cursive;
+        font-size: 18px;
+        left: 178px;
+        top: -15px;
+        z-index: 200;
+    }
+    #decker_history {
+        position: relative;
+        /* border: 2px solid red; */
+        height: 40px;
+        width: 238px;
+        padding: 10px;
+        color: #07759d;
+        font-family: 'Wallpoet', cursive;
+        font-size: 18px;
+        left: 144px;
+        top: 82px;
+        z-index: 200;
+    }
+    div h4 {
+        position: absolute;
+        font-family: 'Wallpoet', sans-serif;
+        width: 100px;
+        top: 42px;
+        left: 0px;
+        font-size: 14px;
+        color: #4E5761;
+        text-align: center;
+        padding: 5px;
+        background: -webkit-linear-gradient(#93d1ff, black);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    section {
+        position: relative;
+        left: 110px;
+        width: 803px;
+        min-height: auto;
+        /*        border: 4px solid green;*/
+    }
+    #hud {
+        position: absolute;
+        width: 700px;
+        top: 50px;
+        height: 500px;
+        background-size: 800px;
+    }
+    .container {
+        position: absolute;
+        height: 130px;
+        width: 110px !important;
+        /*        border: 2px solid red !important;*/
+        top: 210px !important;
+        left: 345px !important;
+    }
+    /* THIS IS ACTUALLY THE MEDIUM CIRCLE*/
+    #large-circle {
+        width: 90px;
+        height: 90px;
+        top: 10px;
+        left: 0px;
+    }
+    #x-large-circle {
+        width: 70px;
+        height: 70px;
+        top: 20px;
+        left: 10px;
+    }
+    #small-circle {
+        width: 50px;
+        height: 50px;
+        top: 29.5px;
+        left: 20px;
+    }
+    #blue-line {
+        background-size: 70%;
+        background-repeat: no-repeat;
+        left: 72px;
+        top: 103px;
+    }
+    #orange-line {
+        background-size: 70%;
+        background-repeat: no-repeat;
+        top: 46px;
+        left: 414px;
+    }
+    #green-line {
+        background-size: 70%;
+        background-repeat: no-repeat;
+        top: 111px;
+        left: 417px;
+    }
+    #decker_stats {
+        font-size: 18px;
+        left: 10px;
+        top: -14px;
+    }
+    #decker_folio {
+        font-size: 18px;
+        left: 178px;
+        top: -15px;
+    }
+    #decker_history {
+        font-size: 18px;
+        left: 144px;
+        top: 82px;
+    }
+    div h4 {
+        width: 100px;
+        top: 42px;
+        left: 0px;
+        font-size: 14px;
+    }
+    #dialog {
+        left: 350px !important;
+        top: 200px;
+    }
+    #about {
+        left: 350px !important;
+        top: 200px;
+    }
+    #folio {
+        left: 850px !important;
+        top: 200px;
+        width:280px
+    }
+     
+}
+
+@media screen and (min-width: 1200px) {
+    section {
+        position: relative;
+        left: 274px;
+        /*        border: 2px solid red;*/
+        height: 750px;
+        width: 1300px;
+        top: 30px;
+    }
+    #hud {
+        position: absolute;
+        width: 300px;
+        height: 500px;
+        background-image: url(../imgs/colorHud/HUD-moc-noline.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 1085px;
+        height: 700px;
+        /*    border: 2px solid green;*/
+    }
+    #blue-line {
+        background-size: 100%;
+        left: 143px;
+        top: 116px;
+    }
+    #decker_stats {
+        font-size: 23px;
+        left: 30px;
+        top: -11px;
+    }
+    #orange-line {
+        background-size: 100%;
+        top: 192px;
+        left: 656px;
+    }
+    #decker_history {
+        font-size: 23px;
+        left: 231px;
+        top: 129px;
+    }
+    #green-line {
+        background-size: 100%;
+        top: 148px;
+        left: 657px;
+    }
+    #decker_folio {
+        font-size: 23px;
+        left: 280px;
+        top: -10px;
+    }
+    .container {
+        height: 200px;
+        width: 200px !important;
+        top: 300px !important;
+        left: 533px !important;
+    }
+    #x-large-circle {
+        width: 140px;
+        height: 140px;
+        top: 20px;
+        left: 10px;
+    }
+    #large-circle {
+        width: 160px;
+        height: 160px;
+        top: 10px;
+        left: 0px;
+    }
+    #small-circle {
+        width: 120px;
+        height: 120px;
+        top: 29.5px;
+        left: 20px;
+    }
+    #myModalLabel {
+        font-size: 26px;
+        width: 223px;
+        /*    border: 2px solid red;*/
+    }
+    div h4 {
+        top: 72px;
+        left: 34px;
+        font-size: 24px;
+    }
+    .decker-modal-stats {
+        position: relative;
+        left: 20px !important;
+        border: 2px solid #13548d;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        width: 210px !important;
+    }
+    .decker-modal-history {
+        position: relative;
+        left: 40px !important;
+        border: 2px solid #13548d;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        width: 250px !important;
+    }
+    .decker-modal-folio {
+        position: relative;
+        left: 150px !important;
+        border: 2px solid #13548d;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        width: 250px !important;
+    }
+     #dialog {
+        left: 30% !important;
+        top: 200px;
+    }
+    #about {
+        left: 75% !important;
+        top: 200px;
+    }
+    #folio {
+        left: 83% !important;
+        top: 200px;
+        width:580px
+    }
+}

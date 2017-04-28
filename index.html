@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio HUD</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+<!--    <link rel="stylesheet" href="css/responsive.css">-->
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Iceberg|Press+Start+2P|Wallpoet|Quantico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Atomic+Age" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/2.2.2/css/bootstrap-combined.min.css">
+
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.js"></script>
+
+
+
+
+    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body>
+
+   <div id="body-mask"></div>   
+   
+    <!--    UNDER CONSTRUCTION MESSAGE / MAKE SURE TO DELETE OR COMMENT OUT WHILE TESTING AND YOU FINSHED-->
+
+    <script>
+        alert("Thank you for checking out my portfolio in the making! As you may find out I am still under construction. So, please bare with me. If you have any tips or questions, feel free to drop me an email, Thanks for stopping by! marcc24k@gmail.com");
+    </script>
+
+
+
+ 
+     
+
+
+    <section>
+        <!--MAIN HUD-->
+
+        <div id="hud"></div>
+
+        <!--BLUE LINE WITH NESTED DECKER DATA-->
+        <div id='blue-line'>
+            <div id='decker_stats'>Decker Stats</div>
+        </div>
+        <!--    ORANGE LINE WITH NESTED FOLIO-->
+        <div id='orange-line'>
+            <div id='decker_history'>Decker History</div>
+        </div>
+        <!--    GREEN LINE WITH NESTED ABOUT-->
+        <div id='green-line'>
+            <div id='decker_folio'>Decker Folio</div>
+        </div>
+
+
+        <!--HUD SPINNER  -->
+        <div class='container'>
+
+            <div id='large-circle'></div>
+
+            <div id='x-large-circle'></div>
+
+
+            <div id='small-circle'></div>
+            <h4>DATA</h4>
+        </div>
+
+    </section>
+
+
+
+    <!-- Modal -->
+
+
+
+
+
+    <div id="dialog" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="ui-widget-content">
+        <div class="modal-header">
+
+            <img src="imgs/colorHud/spike-top.png">
+
+            <button type="button" class="stats-close" data-dismiss="modal" aria-hidden="true"> X </button>
+            <h3 id="myModalLabel" class="decker-modal-stats header">Decker Data</h3>
+
+            <div class="modal-body">
+
+                <p><span style=" background-color:#011118; color: #aeb3bb; font-size: 1em; font-family: 'Wallpoet' ">Name:</span> <b class="name">Marc Cook</b></p>
+                <p class="status"><span style=" background-color:#011118; color: #aeb3bb; font-size: 1em; font-family: 'Wallpoet' ">Race:</span> <b class="modified">Human</b></p>
+                <p><span style=" background-color:#011118; color: #aeb3bb; font-size: 1em; font-family: 'Wallpoet' ">Trade:</span> <b class="front">Front-end Developer</b></p>
+                <p><span style=" background-color:#011118; color: #1c3eff;; font-size: 1.2em; font-family: 'Wallpoet', cursive; list-style: underlined">Languages</span></p>
+                <p><span style=" background-color:#011118; color: #aeb3bb; font-size: 1em; font-family: 'Wallpoet' ">HTML/CSS:</span><span style="color: orange; width: 0px; background-color:#011118;"><p class="one"> •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••</p></span></p>
+                <p><span style=" background-color:#011118; color: #aeb3bb; font-size: 1em; font-family: 'Wallpoet' ">Javascript/JQuery:</span> <span style="color: purple; width: 0px; background-color:#011118;"><p class="two"> ••••••••••••••••••••••••••••••••••••••••••••</p></span></p>
+                <p><span style=" background-color:#011118; color: #aeb3bb; font-size: 1em; font-family: 'Wallpoet' ">AngularJS:</span><span style="color: green; width: 0px; background-color:#011118;"><p class="three">••••••••••••••••••••••••••••••••</p> </span></p>
+                <p><span style=" background-color:#011118; color: #aeb3bb; font-size: 1em; font-family: 'Wallpoet'">NodeJS:</span> <span style="color: red; width: 0px; background-color:#011118;"> <p class="four">•••••••••••••••••••</p></span></p>
+                <p><span style=" background-color:#011118; color: #aeb3bb; font-size: 1em; font-family: 'Wallpoet' ">Gulp:</span> <span style="color: silver; width: 0px; background-color:#011118;"> <p class="five">•••••••••••••••••••••••</p> </span> </p>
+                <p><span style=" background-color:#011118; color: #aeb3bb; font-size: 1em; font-family: 'Wallpoet' ">GIT:</span> <span style="color: yellow; width: 0px; background-color:#011118;"> <p class="six">•••••••••••••••••••••••••••••••••••</p></span> </p>
+            </div>
+
+
+
+            <img class="spike-bottom" src="imgs/colorHud/spike-bottom.png">
+        </div>
+
+    </div>
+
+
+    <div id="about" class="modal hide fade" tabindex="-1" role="about" aria-labelledby="myModalLabel" aria-hidden="true" class="ui-widget-content">
+        <div class="modal-header">
+            <img src="imgs/colorHud/spike-top.png">
+            <button type="button" class="about-close" data-dismiss="modal" aria-hidden="true"> X</button>
+            <h3 id="myModalLabel" class="decker-modal-history">Decker History</h3>
+
+            <div class="modal-body">
+
+                <!--                MODAL HEADER-->
+                <h3 class="title-name"><span class='name' style="color:orangered">Marc Cook</span></h3>
+
+                <div id="headshot"><img src="imgs/project-imgs/dwarf_shadow.jpg"></div>
+
+ 
+
+
+                <p id="history-description"> Hello, My name is<span class=" name "> Marc </span> and I'm an ambitious web developer with the desire and passion to build and improve. </p>
+
+
+            </div>
+            <img class="spike-bottom" src="imgs/colorHud/spike-bottom.png">
+        </div>
+    </div>
+
+
+
+    <div id="folio" class="modal hide fade" tabindex="-1" role="folio" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <img src="imgs/colorHud/spike-top.png">
+            <button type="button" class="folio-close" data-dismiss="modal" aria-hidden="true">X</button>
+            <h3 id="myModalLabel" class="decker-modal-folio">Decker Folio</h3>
+
+            <div class="modal-body" class="ui-widget-content">
+                <h5>Codepen Picked Projects</h5>
+                <ol>
+
+                    <li class="imgs">
+                        <a href="http://codepen.io/marcc24k/pen/BjmWxx" target="popup" onclick="window.open('http://codepen.io/marcc24k/pen/BjmWxx','popup','width=600,height=600'); return false;"><img src="imgs/project-imgs/projectScreenshots/codepen/gameBoyRemake.PNG"></a>
+                    </li>
+
+                    <li class="imgs">
+                        <a href="http://codepen.io/marcc24k/pen/LGqxjr" target="popup" onclick="window.open('http://codepen.io/marcc24k/pen/LGqxjr','popup','width=600,height=600'); return false;"><img src="imgs/project-imgs/projectScreenshots/codepen/animeProfileCard.PNG"></a>
+                    </li>
+
+                    <li class="imgs">
+                        <a href="http://codepen.io/marcc24k/pen/ZWRMMm" target="popup" onclick="window.open('http://codepen.io/marcc24k/pen/ZWRMMm','popup','width=600,height=600'); return false;"><img src="imgs/project-imgs/projectScreenshots/codepen/flexBoxMPC.PNG"></a>
+                    </li>
+
+                    <li class="imgs">
+                        <a href="http://codepen.io/marcc24k/pen/dXbgYB" target="popup" onclick="window.open('http://codepen.io/marcc24k/pen/dXbgYB','popup','width=600,height=600'); return false;"><img src="imgs/project-imgs/projectScreenshots/codepen/hypnoLoader.PNG"></a>
+                    </li>
+
+                    <li class="imgs">
+                        <a href="http://codepen.io/marcc24k/pen/obgQWW" target="popup" onclick="window.open('http://codepen.io/marcc24k/pen/obgQWW','popup','width=600,height=600'); return false;"><img src="imgs/project-imgs/projectScreenshots/codepen/hyperLoader.PNG"></a>
+                    </li>
+
+                    <li class="imgs">
+                        <a href="http://codepen.io/marcc24k/pen/MKzjxg" target="popup" onclick="window.open('http://codepen.io/marcc24k/pen/MKzjxg','popup','width=600,height=600'); return false;"><img src="imgs/project-imgs/projectScreenshots/codepen/animePassGen.PNG"></a>
+                    </li>
+
+                </ol>
+
+                <h5><span style="color: orangered;">Grand Circus Projects</span></h5>
+                <ol>
+
+
+                    <li class="gc-imgs"><img src="imgs/project-imgs/projectScreenshots/GC/soundscapeapp.PNG" target="popup" onclick="window.open('https://soundscapeapp.github.io/public/','popup','width=600,height=600'); return false;"> </li>
+
+                    <li class="gc-imgs"><img src="imgs/project-imgs/projectScreenshots/GC/GroupMidtermProjectTheatre.PNG" target="popup" onclick="window.open('https://marcc24k.github.io/group-one-midterm//','popup','width=600,height=600'); return false;"> </li>
+
+                    <li class="gc-imgs"><img src="imgs/project-imgs/projectScreenshots/GC/ShoppingListSkyrim.PNG" target="popup" onclick="window.open('https://marcc24k.github.io/skyrim-shopping-list/','popup','width=600,height=600'); return false;"> </li>
+
+                    <li class="gc-imgs"><img src="imgs/project-imgs/projectScreenshots/GC/toDoList.PNG" target="popup" onclick="window.open('https://marcc24k.github.io/cook_lab_12_angular_todo/','popup','width=600,height=600'); return false;"> </li>
+
+                    <li class="gc-imgs"><img src="imgs/project-imgs/projectScreenshots/GC/gtoFanPageBootstrap.PNG" target="popup" onclick="window.open('https://github.com/Marcc24k/gto-onizuka-fanpage','popup','width=600,height=600'); return false;"> </li>
+
+                    <li class="gc-imgs"><img src="imgs/project-imgs/projectScreenshots/GC/cowboyBebopMadLibs.PNG" target="popup" onclick="window.open('https://marcc24k.github.io/cook-lab-15/#/','popup','width=600,height=600'); return false;"> </li>
+                </ol>
+            </div>
+            <img class="spike-bottom" src="imgs/colorHud/spike-bottom.png">
+        </div>
+    </div>
+
+    <!--
+    <div class="red_small_outer"></div>
+    <div class="lightblue"></div>
+    <div class="lightblue_outer_trans"></div>
+    <div class="lightblue_green_middle"></div>
+    <div class="lightblue_small_inner"></div>
+    <div class="purple_small_inner"></div>
+  
+-->
+
+
+    <script src="js/jq.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,563 @@
+ 
+body {
+    position: absolute;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #000 !important;
+    
+    background-image: url(../imgs/colorHud/cpu.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#body-mask{
+    position: absolute;
+    width: 99%;
+    height:100%;
+    background-color:black;
+    opacity: .9;
+/*    border: 4px solid red;*/
+}
+
+.stats-close,
+.about-close,
+.folio-close {
+    position: inherit;
+    border: 2px solid #011118;
+    background-color: #011118;
+    font-size: 20px;
+    font-family: "Wallpoet", cursive;
+    color: red;
+    float: right;
+}
+
+.stats-close:hover,
+.about-close:hover,
+.folio-close:hover {
+    color: silver;
+    font-size: 23px;
+    font-family: "Wallpoet", cursive;
+}
+
+ 
+
+#blue-hud{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color:transparent;
+    
+}
+
+ 
+
+section {
+    position: relative;
+    left: 251px !important;
+    /* border: 2px solid red; */
+    height: 750px;
+    width: 1300px;
+    top: 150px !important;
+}
+
+#hud {
+    position: absolute;
+    background-image: url(../imgs/colorHud/HUD-moc-trans.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1145px;
+    height: 654px !important;
+    left: 82px;
+    top: px;
+/*    border: 2px solid green;*/
+}
+
+
+/*HUD LINES*/
+
+#blue-line {
+    position: relative;
+    width: 469px;
+    height: 250px;
+    color: white;
+    background-image: url(../imgs/colorHud/pink-line.png);
+    left: 162px;
+    top: 103px;
+    z-index: 200;
+}
+
+#decker_stats {
+    position: absolute;
+    /* border: 2px solid red; */
+    height: 40px;
+    padding: 10px;
+    color: #166f2e;
+    font-family: 'Wallpoet', cursive;
+    font-size: 25px;
+    left: 27px;
+    top: -9px;
+    z-index: 200;
+}
+
+#decker_stats:hover {
+    color: orangered;
+}
+
+#orange-line {
+    position: relative;
+    width: 485px;
+    height: 220px;
+    background-image: url(../imgs/colorHud/orange-line.png);
+    top: 162px;
+    left: 656px;
+    z-index: 200;
+}
+
+#decker_history {
+    position: relative;
+    /* border: 2px solid red; */
+    height: 40px;
+    width: 238px;
+    padding: 10px;
+    color: #07759d;
+    font-family: 'Wallpoet', cursive;
+    font-size: 25px;
+    left: 210px;
+    top: 130px;
+    z-index: 200;
+}
+
+#decker_history:hover {
+    color: deeppink;
+}
+
+#green-line {
+    position: absolute;
+    width: 492px;
+    height: 223px;
+    background-image: url(../imgs/colorHud/green-line.png);
+    top: 127px;
+    left: 704px;
+    z-index: 200;
+}
+
+#decker_folio {
+    position: absolute;
+    /* border: 2px solid red; */
+    height: 40px;
+    padding: 10px;
+    color: #b100ff;
+    font-family: 'Wallpoet', cursive;
+    font-size: 25px;
+    left: 267px;
+    top: -10px;
+    z-index: 200;
+}
+
+#decker_folio:hover {
+    color: #52bab3;
+}
+
+.container {
+    position: absolute;
+    height: 200px;
+    width: 200px !important;
+    top: 266px !important;
+    left: 578px !important;
+    z-index: 350 !important;
+    /* border: 2px solid green; */
+}
+
+#x-large-circle {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border: 10px solid transparent;
+    border-left-color: orangered;
+    border-right-color: orangered;
+    border-radius: 100%;
+    top: 14px;
+    left: 11px;
+    background: transparent;
+    opacity: .65;
+    filter: blur(1px);
+    float: left;
+}
+
+#large-circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 10px solid transparent;
+    border-radius: 100%;
+    border-top-color: goldenrod;
+    border-bottom-color: goldenrod;
+    top: 4px;
+    left: 1px;
+    opacity: .3;
+    filter: blur(1px);
+}
+
+#small-circle {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border: 10px solid transparent;
+    border-radius: 100%;
+    border-top-color: forestgreen;
+    border-bottom-color: forestgreen;
+   top: 24px;
+    left: 21px;
+    opacity: .6;
+    filter: blur(1px);
+    z-index: 100;
+    background-color: transparent;
+}
+
+div h4 {
+    position: absolute;
+    font-family: 'Wallpoet', sans-serif;
+    width: 100px;
+    top: 64px;
+    left: 32px;
+    font-size: 2em;
+    color: #4E5761;
+    text-align: center;
+    padding: 5px;
+    background: -webkit-linear-gradient(#93d1ff, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* dialog box */
+
+#dialog {
+    width: 300px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 14px 2px orangered;
+    opacity: .9;
+    border-radius: 10px;
+    color: black;
+    top: 140px;
+    left: 457px !important;
+    position: absolute;
+}
+
+#about {
+    width: 400px;
+    min-height: auto;
+    border: 1px solid transparent;
+    box-shadow: 0 0 14px 2px orangered;
+    opacity: .9;
+    border-radius: 10px;
+    color: black;
+    top: 280px;
+    left: 1100px;
+    position: absolute;
+}
+
+#headshot {
+    position: inherit;
+    width: 210px;
+    min-height: 275px;
+    padding: 0px;
+    border-radius: 10px;
+    border: 6px solid darkslategrey;
+    left: 68px;
+    z-index: 1;
+}
+
+#headshot-mask {
+    position: absolute;
+    width: 210px;
+    min-height: 280px;
+    padding: 0px;
+    border-radius: 20px;
+    border: 6px solid darkslategrey;
+    top: 45px;
+    left: 60px;
+    background-color: black;
+    opacity: .6;
+    z-index: 0
+}
+
+#history-description {
+    position: relative;
+    border: 2px inset darkslateblue;
+    top: 5px;
+    left: 22px;
+    border-radius: 5px;
+    width: 300px;
+    height: 54px;
+    padding: 5px;
+}
+
+.title-name {
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    font-family: "wallpoet", cursive;
+}
+
+
+/*FOLIO PROPERTIES*/
+
+h5 {
+    color: green !important;
+    font-family: "Atomic age", cursive !important;
+}
+
+#folio {
+    width: 600px;
+    text-align: center;
+    border: 1px solid transparent;
+    box-shadow: 0 0 14px 2px orangered;
+    opacity: .9;
+    border-radius: 10px;
+    color: black;
+    top: 107px;
+    left: 82%;
+}
+
+ol {
+    position: relative;
+    width: 500px;
+    min-height: auto;
+    /*    border:2px solid red;*/
+}
+
+li {
+    position: absolute;
+    display: flex;
+    left: 0px;
+}
+
+.imgs {
+    position: relative;
+    color: white;
+    background-color: #011118;
+    font-family: 'Wallpoet', curisve;
+    font-size: 100%;
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 130px;
+    min-height: auto;
+    border: 2px solid darkslategrey;
+    border-radius: 5px;
+}
+
+.imgs:hover {
+    border: 2px solid #09ed00;
+}
+
+.gc-imgs {
+    position: relative;
+    color: white;
+    background-color: #011118;
+    font-family: 'Wallpoet', curisve;
+    font-size: 100%;
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 130px;
+    min-height: auto;
+    border: 2px solid darkslategrey;
+    border-radius: 5px;
+}
+
+.gc-imgs:hover {
+    border: 2px solid orangered;
+}
+
+.name,
+.front,
+div p .modified {
+    background-color: transparent;
+}
+
+div .modal-body {
+    position: relative;
+    background-color: #011118;
+    bottom: -5px;
+    left: 5px;
+    padding-left: 5px;
+    /*height: 346px;*/
+    opacity: .7;
+}
+
+div p {
+    background-color: transparent;
+}
+
+.modal-header {
+    background-color: #011118;
+    opacity: .9;
+    border-radius: 10px;
+}
+
+#myModalLabel {
+    position: relative;
+    background-color: #011118;
+    opacity: .9;
+    font-family: "Wallpoet", cursive;
+    font-size: 1.9em;
+    width: 308px;
+    left: 61px;
+    text-align: center;
+    background: -webkit-linear-gradient(#001fff, #9E9E9E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.decker-modal-stats {
+    position: relative;
+    left: 20px !important;
+    border: 2px solid #13548d;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    width: 210px !important;
+    opacity: .6;
+}
+
+.decker-modal-history {
+    position: relative;
+    border: 2px solid #13548d;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    width: 250px !important;
+    opacity: .6;
+}
+
+.decker-modal-folio {
+    position: relative;
+    left: 150px !important;
+    border: 2px solid #13548d;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    width: 250px !important;
+    opacity: .6;
+}
+
+p {
+    font-size: 1em;
+    font-family: 'Iceberg', cursive;
+    color: orangered;
+    z-index: 100;
+}
+
+
+/*typing animation start at zero*/
+
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.one {
+    position: absolute;
+    bottom: 138px;
+    left: 9px;
+    border-right: .1em solid transparent;
+    width: 50%;
+    margin: 2em 1em;
+    background-color: transparent;
+    font-size: 11px;
+    white-space: wrap;
+    overflow: hidden;
+    -webkit-animation: typing 5s steps(121, end), blink-caret .5s step-end infinite alternate;
+}
+
+.two {
+    position: absolute;
+    bottom: 106px;
+    left: 10px;
+    border-right: .1em solid transparent;
+    width: 40%;
+    margin: 2em 1em;
+    background-color: transparent;
+    font-size: 11px;
+    color: #E818D9;
+    white-space: wrap;
+    overflow: hidden;
+    -webkit-animation: typing 5s steps(121, end), blink-caret .5s step-end infinite alternate;
+}
+
+.three {
+    position: absolute;
+    bottom: 70px;
+    left: 5px;
+    border-right: .1em solid transparent;
+    width: 35%;
+    margin: 2em 1em;
+    background-color: transparent;
+    color: green;
+    font-size: 15px;
+    white-space: wrap;
+    overflow: hidden;
+    -webkit-animation: typing 6s steps(121, end), blink-caret .5s step-end infinite alternate;
+}
+
+.four {
+    position: absolute;
+    bottom: 39px;
+    left: 5px;
+    border-right: .1em solid transparent;
+    width: 40%;
+    margin: 2em 1em;
+    background-color: transparent;
+    color: pink;
+    font-size: 15px;
+    white-space: wrap;
+    overflow: hidden;
+    -webkit-animation: typing 6s steps(121, end), blink-caret .5s step-end infinite alternate;
+}
+
+.five {
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    border-right: .1em solid transparent;
+    width: 20%;
+    margin: 2em 1em;
+    background-color: transparent;
+    color: silver;
+    font-size: 15px;
+    white-space: wrap;
+    overflow: hidden;
+    -webkit-animation: typing 7s steps(121, end), blink-caret .10s step-end infinite alternate;
+}
+
+.six {
+    position: absolute;
+    top: 305px;
+    left: 18px;
+    border-right: .1em solid transparent;
+    width: 40%;
+    height: 10px;
+    /*  margin: 2em 1em; */
+    background-color: transparent;
+    color: yellow;
+    font-size: 15px;
+    white-space: wrap;
+    overflow: hidden;
+    -webkit-animation: typing 7s steps(121, end), blink-caret .10s step-end infinite alternate;
+}
